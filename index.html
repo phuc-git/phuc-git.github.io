@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <title>Alexaander Graham Bell</title>
+</head>
+<body>
+    <div id="main">
+        <div id="header">
+            <div id="nav">
+                <a href="#home" class="nav-item" onclick="myFunc();">Home</a>
+                <a href="#about" class="nav-item" onclick="myFunc();">Band</a>
+                <a href="#tour" class="nav-item" onclick="myFunc();">Tour</a>
+                <a href="#contact" class="nav-item" onclick="myFunc();">Contact</a>
+                <div class="nav-item has-sub-nav">
+                    <a href="#" onclick="return false;">More<i class="fas fa-sort-down sub-nav-icon"></i></a>
+                    <div class="sub-nav">
+                        <div class="sub-nav-item"><a href="#">Merchandise</a></div>
+                        <div class="sub-nav-item"><a href="#">Extras</a></div>
+                        <div class="sub-nav-item"><a href="#">Media</a></div>
+                    </div>
+                </div>
+            </div>
+            <div id="search">
+                <i class="fas fa-search"></i>
+            </div>
+            <div id="menu-btn" class="btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    <!-- Content session -->
+        <div id="content">
+            <div id="slider">
+                <div class="slider-item">
+                    <img src="./assets/img/la.jpg" alt="">
+                    <div class="description">
+                        <h2 class="text-center">Los Angeles</h2>
+                        <p class="text-center" >We had the best time playing at Venice Beach!</p>
+                    </div>
+                </div>
+                <div class="slider-item" style="display: none;">
+                    <img src="./assets/img/ny.jpg" alt="">
+                    <div class="description">
+                        <h2 class="text-center">New York</h2>
+                        <p class="text-center" >The atmosphere in New York is lorem ipsum.</p>
+                    </div>
+                </div>
+                <div class="slider-item" style="display: none;">
+                    <img src="./assets/img/chicago.jpg" alt="">
+                    <div class="description">
+                        <h2 class="text-center">Chicago</h2>
+                        <p class="text-center" >Thank you, Chicago - A night we won't forget.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="about" style="display: flex;">
+                <div class="wrapper">
+                    <h2 class="text-center text-wide">The Band</h2>
+                    <p class="text-center text-muted">We love music</p>
+                    <p id="introduction">
+                        We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                    <div id="members">
+                        <div class="profile">
+                            <p class="text-center">Name</p>
+                            <img src="./assets/img/bandmember.jpg" alt="">
+                        </div>
+                        <div class="profile">
+                            <p class="text-center">Name</p>
+                           <img src="./assets/img/bandmember.jpg" alt="">
+                        </div>
+                        <div class="profile">
+                            <p class="text-center">Name</p>
+                            <img src="./assets/img/bandmember.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="tour">
+                <div class="wrapper">
+                    <h2 class="text-center text-wide" style="color: white;">TOUR DATES</h2>
+                    <p class="text-center text-muted">Remember to book your tickets!</p>
+                    <div id="ticket-status">
+                        <ul>
+                            <li class="ticket-status-item">
+                                <p>September</p>
+                                <span class="sold-out">Sold out</span>
+                            </li>
+                            <li class="ticket-status-item">
+                                <p>October</p>
+                                <span class="sold-out">Sold out</span>
+                            </li>
+                            <li class="ticket-status-item have-ticket">
+                                <p>October</p>
+                                <span>3</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="ticket-purcharse">
+                        <div class="ticket-purcharse-info">
+                            <img src="./assets/img/newyork.jpg" alt="">
+                            <div class="location">
+                                <p class="text-bold">New York</p>
+                                <p class="text-muted">Fri 27 Nov 2016</p>
+                                <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo</p>
+                                <button class="btn">Buy Ticket</button>
+                            </div>
+                        </div>
+                        <div class="ticket-purcharse-info" style="margin: 0 16px">
+                            <img src="./assets/img/paris.jpg" alt="">
+                            <div class="location">
+                                <p class="text-bold">Paris</p>
+                                <p class="text-muted">Sat 28 Nov 2016</p>
+                                <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <button class="btn">Buy Ticket</button>
+                            </div>
+                        </div>
+                        <div class="ticket-purcharse-info">
+                            <img src="./assets/img/sanfran.jpg" alt="">
+                            <div class="location">
+                                <p class="text-bold">Sanfranscisco</p>
+                                <p class="text-muted">Sun 29 Nov 2016</p>
+                                <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo</p>
+                                <button class="btn">Buy Ticket</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="contact">
+                <div class="wrapper">
+                    <h2 class="text-wide text-center">Contact</h2>
+                    <p class="text-muted text-center">Fan?Drop a note!</p>
+                    <div id="form-wrapper">
+                        <div class="contact-info">
+                            <p><i class="fas fa-map-marker-alt"></i> Chicago, US</p>
+                            <p><i class="fas fa-phone-alt"></i> Phone: +00 151515</p>
+                            <p><i class="fas fa-envelope"></i> Email: mail@mail.com</p>
+                        </div>
+                        <form id="contact-form" action="/index.html" method="">
+                            <div class="sender">
+                                <input placeholder="Name" type="text" name="name" id="name">
+                                <input placeholder="Email" type="text" name="email" id="email">
+                            </div>
+                            <input placeholder="Message" type="text" name="message" id="message" style="display: block;width: 100%;">
+                            <input class="btn" type="submit" value="Send">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <img src="./assets/img/map.jpg" class="map" alt="">
+
+    <!-- Modal session -->
+        <div id="overlay">
+            <div class="modal">
+                <div class="header">
+                    <span id="exit" class="btn">x</span>
+                    <h2 class="text-wide">
+                        <i class="fa fa-suitcase w3-margin-right" style="margin-right: 8px;"></i>
+                         Tickets
+                    </h2>
+                </div>
+                <div class="container">
+                    <p>
+                        <i class="fa fa-shopping-cart"></i>
+                        Tickets, $15 per person
+                    </p>
+                    <input type="text" placeholder="How many?">
+                    <p>
+                        <i class="fa fa-user"></i>
+                        Send to
+                    </p>
+                    <input type="text" placeholder="Enter email">
+                    <button class="btn" id="pay-btn">
+                        PAY<i class="fa fa-check"></i>
+                    </button>
+                    <div id="close-wrapper">
+                        <button class="btn" onclick="closeModal();">
+                            Close <i class="fas fa-times"></i>
+                        </button>
+                        <p>Need <a href="#" style="color: #2196F3;">help?</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!-- Footer session -->
+        <div id="footer">
+            <div class="footer-wrapper">
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-snapchat"></i>
+                <i class="fab fa-pinterest-p"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-linkedin-in"></i>
+
+                <p>Powered by <a 
+                    href="https://facebook.com/phuclac2k3"
+                    style="color: #2196F3;"
+                    >Phúc</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Javascript -->
+    <script>
+        let index = 0;
+        let sliders = document.getElementsByClassName('slider-item');
+        setInterval(function() {
+            index++;
+            if(index > sliders.length - 1) index = 0;
+            for (i in sliders) {
+                sliders[i].style = "display: none;";
+            }
+            sliders[index].style = "display: block;";
+        },4000);
+    </script>
+    <script>
+        let exit = document.getElementById('exit');
+        let overlay = document.getElementById('overlay');
+        let modal = document.querySelector('#overlay .modal');
+        function closeModal() {
+            overlay.style.display = 'none';
+        }
+        function openModal() {
+            overlay.style.display = 'flex';
+            window.onclick = function(event) {
+                if (event.target == overlay) {
+                    overlay.style.display = "none";
+                }
+            }
+        }
+        exit.onclick = closeModal;
+
+        let btns = document.querySelectorAll('#ticket-purcharse .btn');
+        for (btn of btns) {
+            btn.onclick = openModal;
+        }
+    </script>
+    <script>
+        let header = document.getElementById('header');
+        let menu = document.getElementById('menu-btn');
+        const headerHeight = header.clientHeight;
+        menu.onclick = function() {
+            if(header.clientHeight === headerHeight) {
+                header.style.height = 'auto';
+            }
+            else {
+                header.style.height = `${headerHeight}px`;
+            }
+        }
+
+        function myFunc() {
+            header.style.height = `${headerHeight}px`;
+        }
+        
+    </script>
+</body>
+</html>

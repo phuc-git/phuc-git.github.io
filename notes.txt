@@ -1,0 +1,12 @@
+4 thành phần chính:
+1.Home
+    Slide
+2.Band
+3.Tour
+4.Contact 
+5.Footer
+
+Responsive:
+PC: >= 1024px
+Ipad: 740 <= x < 1024px
+Mobile: < 740px

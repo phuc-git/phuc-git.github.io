@@ -1,0 +1,448 @@
+/* Reset CSS */
+
+* {
+    margin: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* body {
+    /* overflow-x: hidden; */
+
+input {
+    outline: none;
+}
+
+#main {
+    width: 100vw;
+}
+
+#header {
+    background-color: #000000;
+    overflow: hidden;
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+/* NavBar CSS */
+#nav {
+    height: 100%;
+    width: 100%;
+}
+
+#nav .nav-item {
+    float: left;
+    height: var(--header-height);
+    padding: 0 24px;
+    position: relative;
+    cursor: pointer;
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+#nav .nav-item:hover {
+    background-color: #cccccc;
+    color: #000000;
+}
+
+#nav .nav-item .sub-nav {
+    position: absolute;
+    left: 0;
+    background-color: #cccccc;
+    display: none;
+    min-width: 160px;
+    background-color: #ffffff;
+}
+
+#nav .nav-item .sub-nav .sub-nav-item {
+    padding-left: 16px;
+}
+
+#nav .nav-item .sub-nav .sub-nav-item a {
+    text-transform: capitalize !important;
+}
+
+
+#nav .nav-item .sub-nav .sub-nav-item:hover{
+    background-color: #cccccc;
+}
+
+#nav .nav-item.has-sub-nav:hover .sub-nav{
+    display: block;
+    background-color: #ffffff;
+    z-index: 1;
+    line-height: 38px;
+    border-radius: 2px;
+    outline: none;
+}
+
+#nav .nav-item.has-sub-nav a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#nav .nav-item.has-sub-nav:hover a {
+    color: #000000;
+}
+
+#nav .nav-item.has-sub-nav i {
+    position: relative;
+    top: -3px;
+    left: 1px;
+}
+
+/* Search */
+#search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    width: calc(var(--header-height) + 12px);
+    height: var(--header-height);
+}
+
+#menu-btn {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: var(--header-height);
+    padding: 0;
+    background-color: #000000;
+    color: #f1f1f1;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#search:hover {
+    background-color: #f44336;
+    cursor: pointer;
+}
+
+#content {
+    margin-top: var(--header-height);
+}
+
+#slider {
+    width: 100%;
+}
+
+#slider .slider-item {
+    position: relative;
+    display: flex;
+
+}
+
+#slider .slider-item img{
+    display: block;
+    width: 100%;
+}
+
+#slider .slider-item .description{
+    color: #ffffff;
+    position: absolute;
+    width: 100%;
+    bottom: 48px;
+    transition: ease-in;
+}
+
+.wrapper {
+    display: flex;
+    max-width: 800px;
+    width: 100%;
+    margin: auto;
+    padding-top: 64px;
+    padding-left: 16px;
+    padding-right: 16px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#about .wrapper #introduction {
+    text-align: justify;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+#about .wrapper #members {
+    display: flex;
+    justify-content: space-around;
+    padding: 60px 0;
+}
+
+#members .profile {
+    width: 160px;
+}
+
+#members .profile img {
+    width: 96%;
+    margin: 20px 0;
+    border-radius: 3px;
+}
+
+#tour {
+    background-color: #000000;
+    padding-bottom: 128px;
+}
+
+#ticket-status ul {
+    padding-left: 0;
+    background: white;
+    margin-top: 16px;
+    list-style: none;
+    border-radius: 3px;
+}
+
+#ticket-status .ticket-status-item {
+    padding: 8px 16px;
+    display: flex;
+}
+#ticket-status .ticket-status-item:not(:last-child) {
+    border-bottom: 1px solid #dddddd;
+}
+
+#ticket-status .sold-out {
+    background-color: #f44336;
+    color: #ffffff;
+    margin-left: 16px;
+    padding: 2px 8px;
+}
+
+#ticket-status .have-ticket {
+    display: flex;
+    justify-content: space-between;
+}
+
+#ticket-status .have-ticket span {
+    padding: 2px 8px;
+    background: black;
+    color: white;
+    border-radius: 50%;
+}
+
+#ticket-status .ticket-status-item p {
+    color: #656565;
+    /* font-style: italic; */
+    font-size: 16px;
+}
+
+#ticket-purcharse {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#ticket-purcharse .ticket-purcharse-info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 256px;
+}
+
+#ticket-purcharse .ticket-purcharse-info .location {
+    background-color: #ffffff;
+    padding: 0 16px;
+}
+
+/* #ticket-purcharse .ticket-purcharse-info .location p{
+
+} */
+
+#ticket-purcharse .ticket-purcharse-info button {
+    margin: 12px 0;
+}
+
+#ticket-purcharse img {
+    width: 100%;
+}
+
+#ticket-purcharse img:hover {
+    opacity: 0.6;
+}
+
+
+#contact h2{
+    margin: 18px 0px 4px;
+}
+
+#contact #form-wrapper {
+    padding: 24px 0 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#contact #form-wrapper p {
+    padding: 4px 0;
+    font-size: 17px;
+}
+
+#contact #form-wrapper i {
+    width: 28px;
+}
+
+#contact-form input[type="text"]{
+    padding: 8px;
+    border: solid #cccccc 1px;
+    border-radius: 4px;
+    line-height: 22px;
+    display: block;
+    width: 48%;
+}
+
+#contact-form input.btn {
+    float: right;
+    margin-top: 16px;
+    padding: 7px 10px;
+    width: 55px;
+    text-transform: uppercase;
+}
+
+#contact-form .sender {
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.map {
+    display: block;
+    margin-top: 64px;
+    width: 100%;
+    filter: grayscale(50%);
+}
+
+#footer {
+    background-color: #f1f1f1;
+    opacity: 0.8;
+    padding-bottom: 48px;
+}
+
+#footer .footer-wrapper{
+    padding: 8px 8px;
+    padding-top: 64px;
+    text-align: center;
+}
+
+#footer .footer-wrapper i {
+    font-size: 24px;
+    color: #333333;
+    opacity: 1;
+    padding: 24px 0;
+}
+
+#footer .footer-wrapper i:hover {
+    opacity: 0.8 ;
+}
+
+/* Modal session */
+
+#overlay {
+    position: fixed;
+    display: none;
+    z-index: 3;
+    top: 0;
+    padding-top: 100px;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: rgba(0, 0, 0, 0.25);
+    align-items: center;
+    justify-content: center;
+}
+
+#overlay .modal {
+    z-index: inherit;
+    width: 900px;
+    height: 470px;
+    margin: auto;
+    background-color: #ffffff;
+    position: absolute;
+    animation: modalPopup forwards 0.4s ease;
+}
+
+@keyframes modalPopup {
+    0% {
+        top: -300px;
+        opacity: 0;
+    }
+    
+    100% {
+        top: 100px;
+        opacity: 1;
+    }
+}
+
+#overlay .modal .header {
+    padding: 32px 16px;
+    background: #009688;
+    height: 128px;
+    position: relative;
+}
+
+#overlay .modal .header h2{
+    color: #ffffff;
+    font-size: 30px;
+    line-height: 64px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+#overlay .modal .header span{
+    color: #ffffff;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 8px;
+    background: none;
+}
+
+#overlay .modal .container {
+    padding: 0 12px;
+}
+
+#overlay .modal .container p {
+    margin: 16px 0;
+}
+
+#overlay .modal .container input {
+    padding: 8px 6px;
+    display: block;
+    width: 100%;
+    font-size: 16px;
+}
+
+#overlay .modal .container #pay-btn {
+    width: 100%;
+    min-height: 48px;
+    border-radius: 1px;
+    outline: none;
+    margin: 16px 0;
+    background-color: #009688;
+    box-sizing: border-box;
+
+}
+
+#overlay .modal .container #close-wrapper {
+    margin-top: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#overlay .modal .container #close-wrapper button {
+    max-width: 60px;
+    background-color: #f44336;
+}
