@@ -23,7 +23,7 @@ input {
 
 #header {
     background-color: #000000;
-    overflow: hidden;
+    /* overflow: hidden; */
     height: var(--header-height);
     display: flex;
     justify-content: space-between;
@@ -61,6 +61,7 @@ input {
 #nav .nav-item .sub-nav {
     position: absolute;
     left: 0;
+    top: var(--header-height);
     background-color: #cccccc;
     display: none;
     min-width: 160px;

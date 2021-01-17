@@ -8,9 +8,24 @@
 }
 /* Mobile */
 @media(max-width: 739px) {
+    #header {
+        overflow: hidden;
+    }
+
     #nav .nav-item {
         float: unset;
         z-index: 4; 
+    }
+    #nav .nav-item.has-sub-nav>.sub-nav{
+        right: 0;
+    }
+    #nav .nav-item.has-sub-nav>.sub-nav>.sub-nav-item {
+        background-color: #333333;
+        padding: 2px 40px;
+
+    }
+    #nav .nav-item.has-sub-nav .sub-nav a {
+        color: #ffffff;
     }
     #menu-btn {
         display: flex;

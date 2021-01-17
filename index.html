@@ -20,11 +20,11 @@
                 <a href="#tour" class="nav-item" onclick="myFunc();">Tour</a>
                 <a href="#contact" class="nav-item" onclick="myFunc();">Contact</a>
                 <div class="nav-item has-sub-nav">
-                    <a href="#" onclick="return false;">More<i class="fas fa-sort-down sub-nav-icon"></i></a>
+                    <a href="#" onclick="subNavFunc();">More<i class="fas fa-sort-down sub-nav-icon"></i></a>
                     <div class="sub-nav">
-                        <div class="sub-nav-item"><a href="#">Merchandise</a></div>
-                        <div class="sub-nav-item"><a href="#">Extras</a></div>
-                        <div class="sub-nav-item"><a href="#">Media</a></div>
+                        <div class="sub-nav-item" onclick="subNavItemFunc();"><a href="#">Merchandise</a></div>
+                        <div class="sub-nav-item" onclick="subNavItemFunc();"><a href="#">Extras</a></div>
+                        <div class="sub-nav-item" onclick="subNavItemFunc();"><a href="#">Media</a></div>
                     </div>
                 </div>
             </div>
@@ -263,7 +263,16 @@
         function myFunc() {
             header.style.height = `${headerHeight}px`;
         }
-        
+
+        function subNavFunc() {
+            header.style.overflow = 'initial';
+        }
+
+        function subNavItemFunc() {
+            header.style.overflow = 'hidden';
+            header.style.height = `${headerHeight}px`;
+        }
+
     </script>
 </body>
 </html>
