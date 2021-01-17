@@ -8,6 +8,12 @@
 }
 /* Mobile */
 @media(max-width: 739px) {
+    .s-col-full,.s-full-width {
+        width: 100%!important;
+    }
+    .s-mt-8 {
+        margin-top: 8px!important;
+    }
     #header {
         overflow: hidden;
     }
@@ -36,6 +42,18 @@
 
     #search {
         display: none;
+    }
+
+    #about .wrapper #members {
+        display: block;
+    }
+    #members .member-item {
+        width: 100%;
+    }
+    #members .member-item img {
+        width: 60%;
+        margin: 6px auto 20px;
+        display: block;
     }
 
 }

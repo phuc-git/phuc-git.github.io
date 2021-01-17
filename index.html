@@ -15,10 +15,10 @@
     <div id="main">
         <div id="header">
             <div id="nav">
-                <a href="#home" class="nav-item" onclick="myFunc();">Home</a>
-                <a href="#about" class="nav-item" onclick="myFunc();">Band</a>
-                <a href="#tour" class="nav-item" onclick="myFunc();">Tour</a>
-                <a href="#contact" class="nav-item" onclick="myFunc();">Contact</a>
+                <a href="#content" class="nav-item" onclick="subNavItemFunc();">Home</a>
+                <a href="#about" class="nav-item" onclick="subNavItemFunc();">Band</a>
+                <a href="#tour" class="nav-item" onclick="subNavItemFunc();">Tour</a>
+                <a href="#contact" class="nav-item" onclick="subNavItemFunc();">Contact</a>
                 <div class="nav-item has-sub-nav">
                     <a href="#" onclick="subNavFunc();">More<i class="fas fa-sort-down sub-nav-icon"></i></a>
                     <div class="sub-nav">
@@ -68,15 +68,15 @@
                         We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                     </p>
                     <div id="members">
-                        <div class="profile">
+                        <div class="profile member-item">
                             <p class="text-center">Name</p>
                             <img src="./assets/img/bandmember.jpg" alt="">
                         </div>
-                        <div class="profile">
+                        <div class="profile member-item">
                             <p class="text-center">Name</p>
                            <img src="./assets/img/bandmember.jpg" alt="">
                         </div>
-                        <div class="profile">
+                        <div class="profile member-item">
                             <p class="text-center">Name</p>
                             <img src="./assets/img/bandmember.jpg" alt="">
                         </div>
@@ -104,31 +104,31 @@
                         </ul>
                     </div>
                     <div id="ticket-purcharse">
-                        <div class="ticket-purcharse-info">
+                        <div class="ticket-purcharse-info s-col-full">
                             <img src="./assets/img/newyork.jpg" alt="">
                             <div class="location">
                                 <p class="text-bold">New York</p>
                                 <p class="text-muted">Fri 27 Nov 2016</p>
                                 <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo</p>
-                                <button class="btn">Buy Ticket</button>
+                                <button class="btn s-full-width">Buy Ticket</button>
                             </div>
                         </div>
-                        <div class="ticket-purcharse-info" style="margin: 0 16px">
+                        <div class="ticket-purcharse-info s-col-full">
                             <img src="./assets/img/paris.jpg" alt="">
                             <div class="location">
                                 <p class="text-bold">Paris</p>
                                 <p class="text-muted">Sat 28 Nov 2016</p>
                                 <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button class="btn">Buy Ticket</button>
+                                <button class="btn s-full-width">Buy Ticket</button>
                             </div>
                         </div>
-                        <div class="ticket-purcharse-info">
+                        <div class="ticket-purcharse-info s-col-full">
                             <img src="./assets/img/sanfran.jpg" alt="">
                             <div class="location">
                                 <p class="text-bold">Sanfranscisco</p>
                                 <p class="text-muted">Sun 29 Nov 2016</p>
                                 <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo</p>
-                                <button class="btn">Buy Ticket</button>
+                                <button class="btn s-full-width">Buy Ticket</button>
                             </div>
                         </div>
                     </div>
@@ -139,18 +139,18 @@
                     <h2 class="text-wide text-center">Contact</h2>
                     <p class="text-muted text-center">Fan?Drop a note!</p>
                     <div id="form-wrapper">
-                        <div class="contact-info">
+                        <div class="contact-info s-col-full">
                             <p><i class="fas fa-map-marker-alt"></i> Chicago, US</p>
                             <p><i class="fas fa-phone-alt"></i> Phone: +00 151515</p>
                             <p><i class="fas fa-envelope"></i> Email: mail@mail.com</p>
                         </div>
-                        <form id="contact-form" action="/index.html" method="">
+                        <form id="contact-form" class="contact-info s-col-full" action="/index.html" method="">
                             <div class="sender">
-                                <input placeholder="Name" type="text" name="name" id="name">
-                                <input placeholder="Email" type="text" name="email" id="email">
+                                <input placeholder="Name" type="text" name="name" id="name" class="s-col-full">
+                                <input placeholder="Email" type="text" name="email" id="email" class="s-col-full">
                             </div>
                             <input placeholder="Message" type="text" name="message" id="message" style="display: block;width: 100%;">
-                            <input class="btn" type="submit" value="Send">
+                            <input class="btn s-full-width s-mt-8" type="submit" value="Send">
                         </form>
                     </div>
                 </div>
@@ -260,9 +260,6 @@
             }
         }
 
-        function myFunc() {
-            header.style.height = `${headerHeight}px`;
-        }
 
         function subNavFunc() {
             header.style.overflow = 'initial';

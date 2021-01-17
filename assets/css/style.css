@@ -241,7 +241,7 @@ input {
 }
 
 #ticket-purcharse {
-    margin-top: 30px;
+    margin-top: 16px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -251,7 +251,9 @@ input {
     display: flex;
     align-items: center;
     flex-direction: column;
-    max-width: 256px;
+    width: 33.33%;
+    padding: 0 4px;
+    margin-top: 16px;
 }
 
 #ticket-purcharse .ticket-purcharse-info .location {
@@ -281,8 +283,9 @@ input {
 }
 
 #contact #form-wrapper {
-    padding: 24px 0 16px;
+    padding: 16px 0 16px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -295,6 +298,10 @@ input {
     width: 28px;
 }
 
+#contact #form-wrapper .contact-info {
+    margin-top: 8px;
+}
+
 #contact-form input[type="text"]{
     padding: 8px;
     border: solid #cccccc 1px;
@@ -302,19 +309,22 @@ input {
     line-height: 22px;
     display: block;
     width: 48%;
+    margin-top: 8px;
 }
 
 #contact-form input.btn {
     float: right;
     margin-top: 16px;
     padding: 7px 10px;
-    width: 55px;
+    width: 84px;
+    height: 36px;
     text-transform: uppercase;
 }
 
 #contact-form .sender {
     margin-bottom: 8px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
